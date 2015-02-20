@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="application.css">
 </head>
 <body>
   <!-- Static navbar -->
@@ -45,19 +46,38 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>El señor de los anillos</td>
-          <td>J.R.R. Tolkien</td>
-          <td>60 €</td>
-        </tr>
       </tbody>
     </table>
+
+    <br /><br /><br /><br />
+
+    <div class="bs-docs-example center-block">
+      <div class="alert alert-danger hide" role="alert" id="errors"></div>
+      <form>
+        <div class="form-group has-feedback">
+          <label class="control-label" for="title">Título</label>
+          <input type="text" class="form-control" id="title">
+        </div>
+
+        <div class="form-group has-feedback">
+          <label class="control-label" for="author">Autor</label>
+          <input type="text" class="form-control" id="author">
+        </div>
+
+        <div class="form-group has-feedback">
+          <label class="control-label" for="price">Precio</label>
+          <input type="text" class="form-control" id="price">
+        </div>
+
+        <a class="btn btn-success" id="save">Guardar</a>
+      </form>
+    </div> <!-- /panel -->
 
   </div> <!-- /container -->
 
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.min.js"></script>
   <script src="application.js"></script>
 </body>
 </html>
